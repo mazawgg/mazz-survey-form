@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="judul">SURVEY FORM</h1>
+        <p id="description" class="description" class="text-center">Terimakasih telah meluangkan waktu untuk membantu kami meningkatkan platform ini</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Nama</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Masukkan Nama kamu" required="">
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Masukkan Email kamu" required="">
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Umur<span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Umur kamu">
+        </div>
+        <div class="form-group">
+          <p>Apa peranmu saat ini?</p>
+          <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">Pilih salah satu</option>
+            <option value="pelajar">Pelajar</option>
+            <option value="job">Pekerja Full Time</option>
+            <option value="learner">Pelajar Full Time</option>
+            <option value="preferNo">Tidak ingin memberitahu</option>
+            <option value="other">Lainnya</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Apakah kalian menyukai saya?</p>
+          <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Yoi Banget</label>
+          <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe yes/no</label>
+
+          <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Nggak banget</label>
+        </div>
+        <div class="form-group">
+          <p>Apa makanan favoritmu?</p>
+          <select id="most-like" name="mostLike" class="form-control" required="">
+            <option disabled="" selected="" value="">Pilih salah satu dari ini</option>
+            <option value="challenges">Ikan</option>
+            <option value="projects">Ayam</option>
+            <option value="community">Nasi</option>
+            <option value="openSource">Roti</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            Buah apa yang kamu suka?
+            <span class="clue">(Check semua yag kamu suka)</span>
+          </p>
+
+          <label><input name="prefer" value="pisang" type="checkbox" class="input-checkbox">Pisang</label>
+          <label>
+            <input name="prefer" value="nanas" type="checkbox" class="input-checkbox">Nanas</label>
+          <label><input name="prefer" value="durian" type="checkbox" class="input-checkbox">Durian</label>
+          <label><input name="prefer" value="pepaya" type="checkbox" class="input-checkbox">Pepaya</label>
+          <label><input name="prefer" value="rambutan" type="checkbox" class="input-checkbox">Rambutan</label>
+          <label><input name="prefer" value="mangga" type="checkbox" class="input-checkbox">Mangga</label>
+          <label><input name="prefer" value="sirsak" type="checkbox" class="input-checkbox">Sirsak</label>
+          <label><input name="prefer" value="apel" type="checkbox" class="input-checkbox">Apel</label>
+          <label><input name="prefer" value="lengkeng" type="checkbox" class="input-checkbox">Lengkeng</label>
+          <label><input name="prefer" value="buah-naga" type="checkbox" class="input-checkbox">Buah Naga</label>
+          <label><input name="prefer" value="anggur" type="checkbox" class="input-checkbox">Anggur</label>
+        </div>
+        <div class="form-group">
+          <p>Ada komen atau saran</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Masukin sini wehh..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
